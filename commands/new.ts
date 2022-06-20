@@ -55,7 +55,7 @@ export default async (name: string) => {
             build: "listok build",
         },
         dependencies: {
-            // listok: `^${packagejson.version}`,
+            listok: `^${packagejson.version}`,
         },
     }, null, 2))
 
