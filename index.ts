@@ -4,7 +4,7 @@ const program = new Command()
 
 import packagejson from './package.json'
 
-import init from './commands/init'
+import newCommand from './commands/new'
 import build from './commands/build'
 import serve from './commands/serve'
 
@@ -13,10 +13,10 @@ program
     .description(packagejson.description)
     .version(packagejson.version)
 
-program.command('init')
+program.command('new')
     .description('Initialize a new listok project')
     .argument('[name]', 'Name of the project')
-    .action(init)
+    .action(newCommand)
 
 program.command('build')
     .description('Build your static site from markdown files and ejs templates')
