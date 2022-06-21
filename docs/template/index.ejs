@@ -1,0 +1,19 @@
+<%- include('/includes/header', {
+    logoEnabled: true
+}) %>
+<div class="docs">
+    <style>
+        body {
+            width: 62em;
+        }
+    </style>
+    <%- include('/includes/sidebar') %>
+    <div class="docs-content">
+        <h1 style="margin-top: 0;" id="<%= title %>">
+            <%= title %> 
+            <a class="anchor" href="#">#</a>
+        </h1>
+        <%- content %>
+    </div>
+</div>
+<%- include('/includes/footer') %>

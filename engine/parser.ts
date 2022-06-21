@@ -23,6 +23,7 @@ export default (projectPath: string) => {
     const markdownFiles = glob.sync(path.join(projectPath, "**/*.md"), {
         ignore: [
             path.join(projectPath, "template/**"),
+            path.join(projectPath, "node_modules/**")
         ]
     })
 

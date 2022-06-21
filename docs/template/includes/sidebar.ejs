@@ -1,0 +1,8 @@
+<div class="sidebar">
+    <% Object.entries(docs).forEach(([category, docs]) => { %>
+        <p class="sidebar-category"><%= category %></p>
+        <% docs.forEach(doc => { %>
+            <a class="sidebar-item <%= title === doc.title && 'sidebar-active' %>" href="<%= doc.url %> "><%=doc.title %></a>
+        <% }) %>
+    <% }) %>
+</div>

@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 52em;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.footer {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 3em 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo-icon {
+    height: 48px;
+    margin-right: 16px;
+}
+
+.nav > a {
+    margin-left: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em 0;
+}
+
+.hero-translate {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+}
+
+.hero-logo {
+    height: 256px;
+}
+
+code {
+    width: 100%;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px 12px 12px;    
+    font-size: 16px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.language-bash::before {
+    content: '$';
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul > li > ul {
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+li > ul {
+    margin-top: 0.5em;
+}
+
+li > ul > li {
+    margin-bottom: 0.5em;
+}
+
+li::before {
+    content: "\2022";
+    margin-right: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.anchor {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+}
+
+.md-heading {
+    margin-top: 48px;
+}
+
+h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor {
+    visibility: inherit;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.docs {
+    display: flex;
+}
+
+.docs-content {
+    width: calc(100% - 250px);
+}
+
+.sidebar-category {
+    color:rgba(0, 0, 0, 0.5);
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 225px;
+    margin-right: 25px;
+}
+
+.sidebar-item {
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.sidebar-active {
+    background-color: #eaeaea;
+}

@@ -1,7 +1,16 @@
-# Listok
-*From Russian: A leaf or a piece of paper*
+---
+template: home
+---
 
-A lightweight static site generator powered by Markdown and EJS.
+<div class="hero">
+    <img class="hero-logo" src="/public/logo.png">
+    <h1 class="hero-title">Listok</h1>
+    <p class="hero-translate">From Russian: A leaf or a piece of paper</p>
+    <p class="hero-desc">Lightweight static site generator powered by Markdown and EJS</p>
+    <pre>
+        <code class="language-bash">npx listok new</code>
+    </pre>
+</div>
 
 # Features
 - Zero JS on the client side.

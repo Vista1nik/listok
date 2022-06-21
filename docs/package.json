@@ -1,0 +1,18 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Vista1nik",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "listok serve",
+    "build": "listok build"
+  },
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "glob": "^8.0.3",
+    "listok": "^0.0.5",
+    "lodash": "^4.17.21",
+    "prismjs": "^1.28.0"
+  }
+}
