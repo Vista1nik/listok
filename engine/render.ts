@@ -13,31 +13,26 @@ export default ({
     templates: string[]
     extensions: any[]
 }) => {
-    return new Promise<string>((resolve, reject) => {
-        const parsed = fm(fs.readFileSync(file, 'utf-8'))
+    const parsed = fm(fs.readFileSync(file, 'utf-8'))
+    const attributes = parsed.attributes as any
 
-        let template = path.join(process.cwd(), 'template', 'index.ejs')
+    let template = path.join(process.cwd(), 'template', 'index.ejs')
 
-        // @ts-ignore
-        if (parsed.attributes.template) {
-            // @ts-ignore
-           template = templates.find(template => template === path.join(process.cwd(), 'template', parsed.attributes.template + '.ejs'))
-        }
+    if (attributes.template) {
+        template = templates.find(template => template === path.join(process.cwd(), 'template', attributes.template + '.ejs'))!
+    }
 
-        extensions.forEach(extension => {
-            marked.use(extension)
-        })
-    
-        ejs.renderFile(template, {
-            // @ts-ignore
-            ...parsed.attributes,
+    const extensionsResult = extensions.map(extension => extension(marked, attributes, parsed.body))
+
+    return ejs.render(
+        fs.readFileSync(template, 'utf-8'), 
+        {
+            ...attributes,
+            ...Object.assign({}, ...extensionsResult),
             content: marked(parsed.body)
-        }, (err, html) => {
-            if (err) {
-                reject(err)
-            }
-
-            resolve(html)
-        })
-    })
+        },
+        {
+            root: path.join(process.cwd(), 'template')
+        }
+    )
 }
