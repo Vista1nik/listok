@@ -1,3 +1,5 @@
+<img height="200" src="https://github.com/Vista1nik/listok/blob/master/docs/template/public/logo.png?raw=true" />
+
 # Listok
 *From Russian: A leaf or a piece of paper*
 
