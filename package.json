@@ -1,8 +1,11 @@
 {
   "name": "listok",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Static site generator",
   "main": "./dist/index.js",
+  "files": [
+    "./dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vista1nik/listok.git"
