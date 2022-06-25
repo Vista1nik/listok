@@ -3,7 +3,7 @@ template: home
 ---
 
 <div class="hero">
-    <img class="hero-logo" src="/public/logo.png">
+    <img class="hero-logo" alt="Listok" src="/public/logo.png">
     <h1 class="hero-title">Listok</h1>
     <p class="hero-translate">From Russian: A leaf or a piece of paper</p>
     <p class="hero-desc">Lightweight static site generator powered by Markdown and EJS</p>

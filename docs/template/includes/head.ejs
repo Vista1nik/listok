@@ -1,0 +1,17 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('/includes/meta.ejs', {
+        meta: {
+            title: typeof title !== 'undefined' ? title : 'Listok',
+            description: typeof description !== 'undefined' ? description : 'Lightweight static site generator powered by Markdown and EJS.',
+            url: typeof url !== 'undefined' ? 'https://listok.vercel.app' + url : 'https://listok.vercel.app',
+            type: 'website',
+            image: '/public/banner.png',
+        }
+    }) %>
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/prism-atom-dark.min.css">
+</head>

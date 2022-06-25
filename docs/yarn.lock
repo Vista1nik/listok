@@ -310,10 +310,10 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-listok@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/listok/-/listok-0.0.5.tgz#c0828b8a6f1573cbc01218bfe6d5248eb944afac"
-  integrity sha512-0LpiAUkLdBxwiXL1B3y5IRPB0tMzVyrgBuCAT31C75Ek3pRGUam/gc8PZvDBbKD/RWIKvRNIoJqVpHeQEdD2Jg==
+listok@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/listok/-/listok-1.0.6.tgz#67f9e22504377f765d57db3230134f3c10ac3ca4"
+  integrity sha512-JgJ72KPsgf+ZoGmfSZqSxJX3BbC4Z4FX7gbrzCBNHUZsEoXrp0Upp7FTt1uFn2fKI/rMG6C/QBIUFIcAWJGQcA==
   dependencies:
     chalk "^4.1.2"
     commander "^9.3.0"

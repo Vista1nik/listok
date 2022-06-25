@@ -1,22 +1,28 @@
-<%- include('/includes/header', {
-    logoEnabled: true
-}) %>
-<div class="docs">
-    <style>
-        body {
-            width: 62em;
-        }
-    </style>
-    <%- include('/includes/sidebar') %>
-    <div class="docs-content">
-        <h1 style="margin-top: 0;" id="<%= title %>">
-            <%= title %> 
-            <a class="anchor" href="#">#</a>
-        </h1>
-        <%- content %>
-        <div class="editpage">
-            <a href="https://github.com/vista1nik/listok/edit/master/docs<%- path %>">Edit this page</a>
+<!DOCTYPE html>
+<html lang="en">
+<%- include('/includes/head') %> 
+<body>
+    <%- include('/includes/header', {
+        logoEnabled: true
+    }) %>
+    <div class="docs">
+        <style>
+            body {
+                width: 62em;
+            }
+        </style>
+        <%- include('/includes/sidebar') %>
+        <div class="docs-content">
+            <h1 style="margin-top: 0;" id="<%= title %>">
+                <%= title %> 
+                <a class="anchor" href="#">#</a>
+            </h1>
+            <%- content %>
+            <div class="editpage">
+                <a href="https://github.com/vista1nik/listok/edit/master/docs<%- path %>">Edit this page</a>
+            </div>
         </div>
     </div>
-</div>
-<%- include('/includes/footer') %>
+    <%- include('/includes/footer') %>    
+</body>
+</html>
