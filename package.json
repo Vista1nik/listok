@@ -1,7 +1,7 @@
 {
   "name": "listok",
-  "version": "1.0.5",
-  "description": "Static site generator",
+  "version": "1.0.6",
+  "description": "A lightweight static site generator powered by Markdown and EJS.",
   "main": "./dist/index.js",
   "files": [
     "./dist"
