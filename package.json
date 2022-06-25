@@ -1,6 +1,6 @@
 {
   "name": "listok",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Static site generator",
   "main": "./dist/index.js",
   "files": [

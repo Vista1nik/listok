@@ -29,6 +29,8 @@ export default ({
         {
             ...attributes,
             ...Object.assign({}, ...extensionsResult),
+            url: file.slice(process.cwd().length, path.extname(file).length * -1).replace('/index', '') || '/',
+            path: file.slice(process.cwd().length),
             content: marked(parsed.body)
         },
         {

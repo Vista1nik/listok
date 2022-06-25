@@ -15,8 +15,6 @@ module.exports = () => {
         }
     }), 'category')
 
-    console.log(docs)
-
     return {
         docs: {
             'Getting Started': docs['Getting Started'],

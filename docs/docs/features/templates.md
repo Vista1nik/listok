@@ -1,12 +1,21 @@
 ---
-title: "Layouts"
+title: "Templates"
 category: 'Features'
 ---
 As templating language Listok uses [EJS](https://ejs.co/) which based on JavaScript syntax.
 
-Lets implement a basic layout with header and footer.
+By default you can use the following variables in your template:
+* **content** — HTML content generated from the markdown file.
+* **url** — URL of the current page.
+* **path** — Path to current markdown file.
+* All attributes from [frontmatter](/docs/features/frontmatter).
+* Data returned by [extensions](/docs/features/extensions).
 
-For a start, create a **includes** folder inside your **template** folder and header, footer templates.
+---
+
+Lets implement a basic template with header and footer.
+
+For a start, create a **includes** folder inside your **template** folder with header and footer.
 ```ejs
 <!-- template/includes/header.ejs -->
 <div class="header">
@@ -34,5 +43,3 @@ And include them into your main template:
 <%- content %>
 <%- include('/includes/footer') %>
 ```
-
-Done!
