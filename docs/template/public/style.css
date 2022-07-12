@@ -126,13 +126,13 @@ p {
 
 .docs-content a {
     text-decoration: none;
-    color: #0256A7;
-    border-bottom: 1px solid #0256A7;
+    color: #5DB826;
+    border-bottom: 1px solid #5DB826;
 }
 
 .docs-content a:hover {
-    color: #01396F;
-    border-bottom: 1px solid #01396F;
+    color: #478C1D;
+    border-bottom: 1px solid #478C1D;
 }
 
 .docs {
